@@ -30,4 +30,16 @@ echo "Hasil Pembanding ' < ' $a dengan $b adalah $hasilLebihKecil <br>";
 echo "Hasil Pembanding ' > ' $a dengan $b adalah $hasilLebihBesar <br>";
 echo "Hasil Pembanding ' <= ' $a dengan $b adalah $hasilLebihKecilSama <br>";
 echo "Hasil Pembanding ' >= ' $a dengan $b adalah $hasilLebihBesarSama <br>";
+echo "<br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "Hasil Logika '&&' $a dengan $b adalah $hasilAnd <br>";
+echo "Hasil Logika '||' $a dengan $b adalah $hasilOr <br>";
+echo "Hasil Logika '!' $a adalah $hasilNotA <br>";
+echo "Hasil Logika '!' $b adalah $hasilNotB <br>";
+
 ?>
