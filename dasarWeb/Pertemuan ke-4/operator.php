@@ -8,3 +8,11 @@ $hasilKali = $a * $b;
 $hasilBagi = $a / $b;
 $sisaBagi = $a % $b;
 $pangkat = $a ** $b;
+
+$hasilSama = $a == $b;
+$hasilTidakSama = $a != $b;
+$hasilSama = $a < $b;
+$hasilSama = $a > $b;
+$hasilSama = $a <= $b;
+$hasilSama = $a >= $b;
+?>
