@@ -10,3 +10,6 @@ echo "Variable a: {$b} <br>";
 echo "Variable a: {$c} <br>";
 echo "Variable a: {$d} <br>";
 echo "Variable a: {$e} <br>";
+
+var_dump($e);
+?>
