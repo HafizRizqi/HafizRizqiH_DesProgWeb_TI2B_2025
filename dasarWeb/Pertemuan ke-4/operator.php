@@ -69,4 +69,12 @@ $hasilTidakIdentik = $a !== $b;
 
 echo "Hasil identik $a dengan $b adalah " . ($hasilIdentik ? "true" : "false") . "<br>";
 echo "Hasil Tidak identik $a dengan $b adalah " . ($hasilTidakIdentik ? "true" : "false") . "<br>";
+echo "<br>";
+
+$totalKursi = 45;
+$kursiterisi = 28;
+$kursiKosong = $totalKursi - $kursiterisi;
+$persentaseKosong = ($kursiKosong / $totalKursi) * 100;
+
+echo "Persen dari Kursi restoran yang kosong adalah $persentaseKosong %"
 ?>
