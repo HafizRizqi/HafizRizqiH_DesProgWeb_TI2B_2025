@@ -31,4 +31,20 @@ if (preg_match($pattern, $text, $matches)) {
     echo "<br>Tidak ada yang cocok!";
 }
 
+$pattern = '/go?d/'; // Cocokkan 'gd' atau 'god'. Soal 5.5
+$text = 'god is good';
+if (preg_match($pattern, $text, $matches)) {
+    echo "<br> Cocokkan: " . $matches[0];
+} else {
+    echo "<br>Tidak ada yang cocok!";
+}
+
+$pattern = '/go{1,3}d/';   // Cocok dengan "god", "good", "goood". Soal 5.6
+$text = 'god is good and goood.';
+if (preg_match_all($pattern, $text, $matches)) {
+    echo "<br>Cocokkan: " . implode(', ', $matches[0]);
+} else {
+    echo "<br>Tidak ada yang cocok!";
+}
+
 ?>
