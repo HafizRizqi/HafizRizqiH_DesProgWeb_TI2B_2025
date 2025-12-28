@@ -10,9 +10,9 @@ $username = antiinjection($koneksi, $_POST['username']);
 $password = antiinjection($koneksi, $_POST['password']);
 
 $query = "SELECT username, level, salt, password as hashed_password FROM user WHERE username = '$username'";
-$result = mysql_query($koneksi, $query);
-$row = mysql_fetch_assoc($result);
-mysql_close($koneksi);
+$result = mysqli_query($koneksi, $query);
+$row = mysqli_fetch_assoc($result);
+mysqli_close($koneksi);
 $salt = $row['salt'];
 $hashed_password = $row['hashed_password'];
 
